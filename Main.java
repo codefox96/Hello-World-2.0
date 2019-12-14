@@ -14,7 +14,6 @@ public class Main extends Application {
         launch(args);                                                                                                   //allow program to use javafx
     }
 
-    @Override
     public void start(Stage primaryStage) throws Exception {
         GridPane layout = new GridPane();                                                                               //set node position style
         home = new Scene(layout);
