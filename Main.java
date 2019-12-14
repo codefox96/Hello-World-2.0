@@ -1,16 +1,12 @@
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-
 //enables javafx functionality
+
 public class Main extends Application {
 
     Scene home;
@@ -29,7 +25,7 @@ public class Main extends Application {
         button.setStyle("-fx-font-size: 5em; -fx-border-color:black;");
         layout.getChildren().addAll(button);                                                                            //set node positions
         button.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
-        button.setOnAction(e -> Resume.Resume("My Resume"));                                                       //lambda expression for user scene change
+        button.setOnAction(e -> Resume.Resume("My Resume"));                                                            //lambda expression for user scene change
 
 
         Button button2 = new Button("README");                                                                          //Learn to accept user input and implement basic code for riddle keyword match
