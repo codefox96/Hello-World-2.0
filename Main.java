@@ -14,7 +14,8 @@ public class Main extends Application {
         launch(args);                                                                                                   //allow program to use javafx
     }
 
-    public void start(Stage primaryStage) throws Exception {
+
+    public void start(Stage primaryStage) {
         GridPane layout = new GridPane();                                                                               //set node position style
         home = new Scene(layout);
         layout.setHgap(10);
@@ -24,7 +25,7 @@ public class Main extends Application {
         button.setStyle("-fx-font-size: 5em; -fx-border-color:black;");
         layout.getChildren().addAll(button);                                                                            //set node positions
         button.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
-        button.setOnAction(e -> Resume.Resume("My Resume"));                                                            //lambda expression for user scene change
+        button.setOnAction(e -> Resume.Resume("My Resume"));                                                       //lambda expression for user scene change
 
 
         Button button2 = new Button("README");                                                                          //Learn to accept user input and implement basic code for riddle keyword match
@@ -46,7 +47,7 @@ public class Main extends Application {
         layout.add(button4,1, 1,1,1);
         button4.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
         button4.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
+           
             public void handle(ActionEvent event) {
                 System.out.println("Hello World 2.0!");
             }
