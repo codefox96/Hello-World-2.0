@@ -1,0 +1,1 @@
+This is a simple program written to practice creating buttons and using lambda expressions. Please be careful using the 'All Systems Go' button! It will play aloud. Lastly, the 'Hello World' button will only print in the terminal.
